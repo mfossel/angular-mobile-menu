@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 
-.order-header{
+.order-header {
     background-color: #49c151;
     color: white;
 }
@@ -11,10 +11,39 @@
     color: white;
 }
 
-#hamburger-button{
+#hamburger-button {
     margin-left: auto;
 }
 
 .card {
-    border-radius:10px;
+    border-radius: 10px;
+}
+
+.menu-closed {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.menu-open {
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+
+    display: block;
+    opacity: 1;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 }
