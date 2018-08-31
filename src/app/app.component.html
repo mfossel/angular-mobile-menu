@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">CommercePointe</a>
+  <button id="hamburger-button" class="float-right" type="button" (click)="toggleMenu()">
+      <i *ngIf="!menuActive" class="fa fa-bars" aria-hidden="true"></i>
+      <i *ngIf="menuActive" class="fa fa-times" aria-hidden="true"></i>
+    </button>
+</nav>
+
+<app-mobile-menu class="" *ngIf="menuActive"></app-mobile-menu>
+
+<main (click)="closeMenu()" class="position-absolute" [ngClass]="{'menu-active': menuActive}">
+
+  <div class="card m-3">
+    <div class="card-header bg-success text-white">
+      <h3> <i class="fa fa-file-text-o mr-2" aria-hidden="true"></i> ORDERS
+      </h3>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis massa, mattis quis dapibus sit amet, pharetra ut quam. Sed ante enim, dictum a tempus in, pretium at nisi. Fusce scelerisque non nisi ac luctus. Proin in mi in lorem sagittis commodo.
+        Vestibulum sed congue quam, nec facilisis arcu. Maecenas in accumsan neque. Vestibulum pretium tortor nec tellus condimentum sagittis. Sed dapibus varius massa, eu pharetra nisi ultrices et.
+      </p>
+      <a class="btn btn-outline-success float-right">Get Started</a>
+    </div>
+  </div>
+
+  <div class="card m-3">
+    <div class="card-header bg-primary text-white">
+      <h3>
+        <i class="fa fa-money mr-2" aria-hidden="true"></i> RECURRING PAYMENTS
+      </h3>
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt nisi et lacus euismod mollis. Praesent in vehicula elit, et aliquam felis. Cras non mi dignissim, viverra elit sed, ultricies orci. Vivamus volutpat, urna vitae porttitor suscipit,
+        tellus nulla pulvinar nisl, at dapibus nisi erat lobortis tortor. Nullam velit felis, fringilla ullamcorper dictum id, tempus vel risus. Praesent in nunc nec nunc suscipit ullamcorper in et magna. Proin sodales tellus in nibh egestas, aliquam
+        vestibulum lectus luctus. Duis tellus turpis, laoreet id finibus sit amet, vestibulum eget nisi. Fusce sit amet gravida ante. Nunc fringilla lorem lectus, sit amet porta augue malesuada aliquam. Suspendisse semper augue a dictum fermentum.</p>
+      <a class="btn btn-outline-success float-right">Manage Payments</a>
+    </div>
+  </div>
+
+</main>

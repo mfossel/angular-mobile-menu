@@ -1,0 +1,20 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.order-header{
+    background-color: #49c151;
+    color: white;
+}
+
+.payment-header {
+    background-color: #49b1c1;
+    color: white;
+}
+
+#hamburger-button{
+    margin-left: auto;
+}
+
+.card {
+    border-radius:10px;
+}
