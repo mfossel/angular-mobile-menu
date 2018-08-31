@@ -12,12 +12,7 @@ export class AppComponent {
   public menuActive: boolean;
   
   toggleMenu(){
-    if(!this.menuActive){
-      this.menuActive = true
-    }
-    else{
-      this.menuActive = false;
-    }
+   this.menuActive = !this.menuActive;
   }
   
   closeMenu(){
